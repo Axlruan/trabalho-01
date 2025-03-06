@@ -1,0 +1,28 @@
+using System;
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        int A = int.Parse(Console.ReadLine());
+        int B = int.Parse(Console.ReadLine());
+        int soma = 0;
+
+        if (A > B)
+        {
+            int temp = A;
+            A = B;
+            B = temp;
+        }
+
+        for (int i = A + 1; i < B; i++)
+        {
+            if (i % 2 != 0)
+            {
+                soma += i;
+            }
+        }
+
+        Console.WriteLine(soma);
+    }
+}
