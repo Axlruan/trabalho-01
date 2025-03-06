@@ -1,0 +1,12 @@
+using System;
+
+class URI {
+    static void Main() {
+        int N = int.Parse(Console.ReadLine()); // Lê o número
+        for (int i = 1; i <= N; i++) {
+            if (N % i == 0) { // Verifica se é divisor
+                Console.WriteLine(i);
+            }
+        }
+    }
+}
