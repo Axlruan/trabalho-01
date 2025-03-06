@@ -1,0 +1,11 @@
+using System;
+
+class URI {
+    static void Main() {
+        double S = 1; // Inicia com o primeiro termo
+        for (int i = 3, j = 2; i <= 39; i += 2, j *= 2) {
+            S += (double)i / j; // Soma o termo da sequência
+        }
+        Console.WriteLine(S.ToString("F2")); // Formata com 2 casas decimais
+    }
+}
